@@ -11,4 +11,12 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./folder/folder.page').then((m) => m.FolderPage),
   },
+  {
+    path: 'area-triangulo',
+    loadComponent: () => import('./area-triangulo/area-triangulo.page').then( m => m.AreaTrianguloPage)
+  },
+  {
+    path: 'area-circulo',
+    loadComponent: () => import('./area-circulo/area-circulo.page').then( m => m.AreaCirculoPage)
+  },
 ];
